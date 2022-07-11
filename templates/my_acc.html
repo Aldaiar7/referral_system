@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="content">
+<ul id='list_referrals'>
+    <h1>Your referral codes</h1>
+    {% for i in data %}
+    <li><p>{{i}}</p></li>
+    {% empty %}
+    <p>You don't have referral codes yet.</p>
+    {% endfor %}
+
+    <h1>People you invited</h1>
+    {% for i in referrals %}
+    <p>{{ i.employee }}</p>
+    {% empty %}
+    <p>You don't have invinted users yet.</p>
+    {% endfor %}
+    <h1>Who invited you</h1>
+    {% for i in invited %}
+    <p>{{ i.employer }}</p>
+    {% endfor %}
+</ul>
+    <button type='submit' class='btn-submit' onclick="location.href='{% url 'create_token' %}'">create referral code</button>
+
+</div>
+{% endblock content %}

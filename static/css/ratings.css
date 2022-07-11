@@ -1,0 +1,44 @@
+.content{
+    padding: 10px;
+    min-height: 500px;
+    height: calc(100% - 150px);
+    width: calc(100% - 150px);
+    margin-left: 5%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: ghostwhite;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius:10px;
+}
+
+.users{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.users ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.users h3{
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+.users ul li{
+    list-style: none;
+    margin-bottom:10px;
+    width: 30%;
+}
+#points{
+    font-weight:bold;
+}
