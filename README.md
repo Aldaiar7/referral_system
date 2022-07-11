@@ -5,7 +5,6 @@ Users can generate referral codes to share.
 ## Table of Contents
 
 * [Setup](#setup)
-* [Endpoints](#endpoints)
 
 ## Setup
 
