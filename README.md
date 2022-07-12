@@ -61,6 +61,7 @@ container_id is id of your docker container.
 ```
 docker exec -it container_id python manage.py createsuperuser
 ```
+Admin will have 5 referral codes.
 
 Go to admin panel and in periodic tasks and create a new task.
 
